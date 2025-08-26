@@ -1,28 +1,26 @@
 body {
-    background: #F0DAA5;
-    font-family: "Courier New", monospace;
+    background: #f0daa5;
+    font-family: 'Courier New', monospace;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     background-image:
-        linear-gradient(to right, rgba(0,0,0,0.05) 2px, transparent 1px),
-        linear-gradient(to bottom, rgba(0,0,0,0.05) 2px, transparent 1px);
+        linear-gradient(to right, rgba(0, 0, 0, 0.05) 2px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 2px, transparent 1px);
     background-size: 20px 20px;
 }
-
 .window {
-    background: #FBF2C4;
-    border: 2px solid #C7522A;
+    background: #fbf2c4;
+    border: 2px solid #c7522a;
     border-radius: 10px;
     width: 450px;
-    box-shadow: 5px 5px 0 rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
 }
-
 .window-header {
-    background: #74A892;
-    color: #FBF2C4;
+    background: #74a892;
+    color: #fbf2c4;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -30,42 +28,92 @@ body {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
-
 .window-buttons span {
     margin-left: 10px;
     cursor: pointer;
 }
-
 .menu-bar {
-    background: #FBF2C4;
+    background: #fbf2c4;
     padding: 5px 10px;
     display: flex;
     gap: 15px;
-    border-bottom: 2px solid #E5C185;
-    color: #C7522A;
+    border-bottom: 2px solid #e5c185;
+    color: #c7522a;
 }
-
 .address-bar {
-    background: #B8CDAB;
+    background: #b8cdab;
     padding: 5px 10px;
     border-radius: 20px;
     margin: 10px;
-    border: 2px solid #E5C185;
+    border: 2px solid #e5c185;
     font-size: 0.9em;
     color: #004343;
 }
-
 .content {
-    background: #B8CDAB;
+    background: #b8cdab;
     padding: 5px 10px;
     border-radius: 20px;
     margin: 10px;
     text-align: center;
-    border: 2px solid #E5C185;
+    border: 2px solid #e5c185;
     font-size: 0.9em;
 }
-
 .content h2 {
     margin-top: 0;
     color: #642915;
+}
+.content #error-message {
+    color: red;
+    display: none;
+}
+.content label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #642915;
+}
+.content input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #e5c185;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #fbf2c4;
+    color: #004343;
+}
+.content input:focus {
+    outline: 2px solid #74a892;
+}
+input::placeholder {
+    font-family: 'Courier New', monospace;
+    color: #74a892;
+}
+.content #password-wrapper {
+    position: relative;
+}
+.content #toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+}
+.content #email-error,
+.content #password-error {
+    color: red;
+    min-height: 1.5em;
+    font-size: 0.95em;
+}
+
+.content button {
+    color: #fbf2c4;
+    background-color: #74a892;
+    margin: 10px;
+    margin-top: 15px;
+    padding: 5px 15px;
+    border: 2px solid #008585;
+    border-radius: 20px;
+    cursor: pointer;
 }
