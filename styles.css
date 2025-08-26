@@ -1,0 +1,71 @@
+body {
+    background: #F0DAA5;
+    font-family: "Courier New", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image:
+        linear-gradient(to right, rgba(0,0,0,0.05) 2px, transparent 1px),
+        linear-gradient(to bottom, rgba(0,0,0,0.05) 2px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.window {
+    background: #FBF2C4;
+    border: 2px solid #C7522A;
+    border-radius: 10px;
+    width: 450px;
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.1);
+}
+
+.window-header {
+    background: #74A892;
+    color: #FBF2C4;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.window-buttons span {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.menu-bar {
+    background: #FBF2C4;
+    padding: 5px 10px;
+    display: flex;
+    gap: 15px;
+    border-bottom: 2px solid #E5C185;
+    color: #C7522A;
+}
+
+.address-bar {
+    background: #B8CDAB;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 10px;
+    border: 2px solid #E5C185;
+    font-size: 0.9em;
+    color: #004343;
+}
+
+.content {
+    background: #B8CDAB;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid #E5C185;
+    font-size: 0.9em;
+}
+
+.content h2 {
+    margin-top: 0;
+    color: #642915;
+}

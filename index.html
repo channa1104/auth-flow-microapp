@@ -1,48 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Auth Flow — UX Micro-App</title>
-</head>
-<body>
-    <div class="window">
-        <div class="window-header">
-            <span class="title">Login</span>
-            <div class="window-buttons">
-                <span>—</span>
-                <span>□</span>
-                <span>×</span>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Auth Flow — UX Micro-App</title>
+    </head>
+    <body>
+        <div class="window">
+            <div class="window-header">
+                <span class="title">Login</span>
+                <div class="window-buttons">
+                    <span>—</span>
+                    <span>□</span>
+                    <span>×</span>
+                </div>
+            </div>
+
+            <div class="menu-bar">
+                <span>File</span>
+                <span>Image</span>
+                <span>View</span>
+                <span>History</span>
+                <span>Help</span>
+            </div>
+
+            <div class="address-bar">www.logintoday.com</div>
+
+            <div class="content">
+                <h2>Login</h2>
+                <div id="error-message"></div>
+                <form id="login-form" novalidate>
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter email" />
+                    <div id="email-error"></div>
+
+                    <label>Password</label>
+                    <div id="password-wrapper">
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter password"
+                        />
+                        <span id="toggle-password">👁️</span>
+                    </div>
+                    <div id="password-error"></div>
+
+                    <button type="submit">Enter</button>
+                </form>
             </div>
         </div>
-
-        <div class="menu-bar">
-            <span>File</span>
-            <span>Image</span>
-            <span>View</span>
-            <span>History</span>
-            <span>Help</span>
-        </div>
-
-        <div class="address-bar">www.logintoday.com</div>
-
-        <div class="content">
-            <h2>Login</h2>
-            <div id="error-message"></div>
-            <form id="login-form" novalidate>
-                <label>Email Address</label>
-                <input type="email" placeholder="Enter email">
-                <div id="email-error"></div>
-
-                <label>Password</label>
-                <div id="password-wrapper">
-                    <input type="password" id="password" placeholder="Enter password">
-                    <span id="toggle-password">👁️</span>
-                </div>
-                <div id="password-error"></div>
-
-                <button type="submit">Enter</button>
-            </form>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
